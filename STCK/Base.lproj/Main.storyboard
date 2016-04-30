@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="FkV-Yq-B6z">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="FkV-Yq-B6z">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -209,7 +209,7 @@
         <!--Watchlist-->
         <scene sceneID="LCp-Ij-rT5">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3iq-6p-jPR" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3iq-6p-jPR" customClass="NavigationController" customModule="STCK" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Watchlist" image="Watchlist" id="AGe-h3-1DN"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="A2G-iK-7Dw">
@@ -391,7 +391,7 @@
         <!--Search-->
         <scene sceneID="jgx-Bp-YyH">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="asu-MA-Kxe" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="asu-MA-Kxe" customClass="NavigationController" customModule="STCK" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Search" image="Search" id="JWS-1H-EVd"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ua9-OE-2iq">
@@ -407,11 +407,11 @@
             </objects>
             <point key="canvasLocation" x="584" y="386"/>
         </scene>
-        <!--News Websites-->
+        <!--News-->
         <scene sceneID="De6-xn-R91">
             <objects>
                 <tableViewController id="4DK-uc-o5B" customClass="NewsTableViewController" customModule="STCK" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="x0k-ga-5ur">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="x0k-ga-5ur">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -420,11 +420,11 @@
                                 <rect key="frame" x="0.0" y="92" width="600" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" tableViewCell="cNZ-j7-q3S" id="yBY-cb-viA">
-                                    <rect key="frame" x="0.0" y="0.0" width="567" height="99.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="567" height="100"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bloomberg.png" translatesAutoresizingMaskIntoConstraints="NO" id="2PM-WD-6XU">
-                                            <rect key="frame" x="215" y="3" width="136" height="92"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="bloomberg.png" translatesAutoresizingMaskIntoConstraints="NO" id="2PM-WD-6XU">
+                                            <rect key="frame" x="215" y="8" width="136" height="84"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="136" id="cSr-BE-8dp"/>
                                             </constraints>
@@ -446,7 +446,7 @@
                             <outlet property="delegate" destination="4DK-uc-o5B" id="BVm-m4-ock"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="News Websites" id="Kzb-5W-smV"/>
+                    <navigationItem key="navigationItem" title="News" id="Kzb-5W-smV"/>
                     <connections>
                         <segue destination="ep6-24-lWd" kind="show" identifier="showNewsWebsite" id="cUF-cJ-O4S"/>
                     </connections>
@@ -458,7 +458,7 @@
         <!--News-->
         <scene sceneID="pX0-t1-gER">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mxQ-Pr-sYo" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mxQ-Pr-sYo" customClass="NavigationController" customModule="STCK" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="News" image="News" id="bBL-O8-KA8"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="yXg-0K-QVN">
